@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="tabla.css">
+</head>
+<body>
+ <!-- 1) Tabla básica -->
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Ciudad</th>
+    </tr>
+
+    <tr>
+        <td>Juan</td>
+        <td>20</td>
+        <td>Bogotá</td>
+    </tr>
+
+    <tr>
+        <td>María</td>
+        <td>22</td>
+        <td>Medellín</td>
+    </tr>
+
+    <tr>
+        <td>Carlos</td>
+        <td>19</td>
+        <td>Cali</td>
+    </tr>
+</table>
+
+<br><br>
+
+<!-- 2) Tabla con thead, tbody y tfoot -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Mouse</td>
+            <td>$50</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>Teclado</td>
+            <td>$80</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td>Monitor</td>
+            <td>$300</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="2">Total de productos</td>
+            <td>4</td>
+        </tr>
+    </tfoot>
+</table>
+
+<br><br>
+
+<!-- 3) Tabla de notas usando rowspan -->
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Materia</th>
+        <th>Nota</th>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Laura</td>
+        <td>Matemáticas</td>
+        <td>4.5</td>
+    </tr>
+
+    <tr>
+        <td>Inglés</td>
+        <td>4.8</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Pedro</td>
+        <td>Historia</td>
+        <td>3.9</td>
+    </tr>
+
+    <tr>
+        <td>Biología</td>
+        <td>4.2</td>
+    </tr>
+</table>
+
+<br><br>
+
+<!-- 4) Tabla tipo factura -->
+<table border="1" width="600">
+    
+    <thead>
+        <tr>
+            <th colspan="4">Alstore</th>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                Cliente: Duvan Alexis <br>
+                Fecha: 12/05/2026
+            </td>
+        </tr>
+
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Mouse Gamer</td>
+            <td>2</td>
+            <td>$50000</td>
+            <td>$100000</td>
+        </tr>
+
+        <tr>
+            <td>Teclado Mecánico</td>
+            <td>1</td>
+            <td>$120000</td>
+            <td>$120000</td>
+        </tr>
+
+        <tr>
+            <td>Audífonos</td>
+            <td>1</td>
+            <td>$80000</td>
+            <td>$80000</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="3"><strong>Total General</strong></td>
+            <td><strong>$300000</strong></td>
+        </tr>
+    </tfoot>
+
+</table>   
+</body>
+</html>
